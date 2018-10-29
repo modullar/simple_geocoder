@@ -1,0 +1,7 @@
+<h1>Geocode</h1>
+<%= form_tag(geocoder_geocode_path, method: :get) do %>
+  Location <%= text_field_tag :location_string, params[:location_string] %>
+
+
+  <%= submit_tag 'Search', name: nil %>
+<% end %>
