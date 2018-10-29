@@ -7,9 +7,11 @@ Rails version 5.2.1
 # Setup
 
 Clone the repo.
-Run `bundle install`
-`rails s`
-and for test
+Run 
+`rake db:create`  
+`bundle install`  
+`rails s`  
+and for test  
 `bundle exec rspec`
 
 # Remarks
