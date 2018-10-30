@@ -1,24 +1,31 @@
-# README
+# Requirements:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version 2.5.1
+Rails version 5.2.1
 
-Things you may want to cover:
 
-* Ruby version
+# Setup
 
-* System dependencies
+Clone the repo.
+Run 
+`rake db:create`  
+`bundle install`  
+`rails s`  
+and for test  
+`bundle exec rspec`
 
-* Configuration
+# Remarks
 
-* Database creation
+Valid Result Example `Kamerunerstr Berlin`
+Invalid Result Example: `Kamerunerstr`
 
-* Database initialization
+- No need for API keys because I used mine but it's better to move them to secret but I did not since this application is not so important.
 
-* How to run the test suite
+- API endpoints are not RESTful like but that would be ideal to have them RESTful like but the requirement is so simple so it won't also be needed.
 
-* Services (job queues, cache servers, search engines, etc.)
+- [Here](https://www.here.com/en) was used to do the geocoding
 
-* Deployment instructions
 
-* ...
+# Possible future Improvements
+
+- autocomplete search for the textbox
