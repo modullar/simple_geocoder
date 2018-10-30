@@ -21,8 +21,8 @@ class GeocoderController < ApplicationController
 
   def built_req
     uri = URI('https://geocoder.api.here.com/6.2/geocode.json')
-    get_params = {app_id: "gh55ocfueeAXQ2JSPW0n",
-                  app_code: "L2n2DIL0EltSWjQ3eIE0FA",
+    get_params = {app_id: Rails.application.credentials[:here][:app_id],
+                  app_code: Rails.application.credentials[:here][:app_code],
                   searchtext: params[:location_string]}
     uri.query = URI.encode_www_form(get_params)
     uri
